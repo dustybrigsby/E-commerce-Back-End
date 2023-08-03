@@ -14,8 +14,9 @@ Product.init(
       type: DataTypes.INTEGER,
       allowNull: false,
       autoIncrement: true,
+      primaryKey: true,
     },
-    name: {
+    product_name: {
       type: DataTypes.STRING,
       allowNull: false,
     },
@@ -33,6 +34,14 @@ Product.init(
       allowNull: false,
       references: {
         model: 'category',
+        key: 'id',
+      }
+    },
+    tag_id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      references: {
+        model: 'tag',
         key: 'id',
       }
     },
