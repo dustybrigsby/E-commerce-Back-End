@@ -21,8 +21,9 @@ Product.init(
       allowNull: false,
     },
     price: {
-      type: DataTypes.DECIMAL,
+      type: DataTypes.DECIMAL(10,2),
       allowNull: false,
+      min: 0.00,
     },
     stock: {
       type: DataTypes.INTEGER,
@@ -31,17 +32,8 @@ Product.init(
     },
     category_id: {
       type: DataTypes.INTEGER,
-      allowNull: false,
       references: {
         model: 'category',
-        key: 'id',
-      }
-    },
-    tag_id: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-      references: {
-        model: 'tag',
         key: 'id',
       }
     },
