@@ -32,14 +32,21 @@ Build the back end for an e-commerce site. Take a working Express.js API and con
 - [Sequelize](https://sequelize.org/)
 - [Dotenv](https://www.npmjs.com/package/dotenv)
 
-While in the root directory of the application, enter:
-"npm install express mysql sequelize dotenv --save"
+While in the root directory of the application, enter "npm install" into the terminal.
 
 <a name="usage"></a>
 
 ## Usage
 
-usage
+After installing, enter "npm run seed" into the terminal, then enter "npm start" into the terminal.
+Using Insomnia, or other application like it, send different http requests to localhost:3001/api/ using the routes:
+
+- /products - see all products with associated category and tag data
+- /products/:id - get, update, or delete product by id
+- /categories - see all categories with associated product data
+- /categories/:id - get, update, or delete category by id
+- /tags - see all tags with associated product data
+- /tags/:id - get, update, or delete tag by id
 
 <a name="screenshot"></a>
 
@@ -57,8 +64,6 @@ See [LICENSE](/LICENSE) file in contatining directory
 <a name="contributors"></a>
 
 ## Contributors
-
-Starter code:
 
 Used the references and tutorials from:
 
