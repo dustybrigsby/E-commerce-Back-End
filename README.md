@@ -52,7 +52,7 @@ Using Insomnia, or other application like it, send different http requests to lo
 
 ## Screenshot
 
-[![Walkthrough Video](image)](link)
+[Walkthrough Video](https://youtu.be/z8Xr2UOKVBA)
 
 <a name="license"></a>
 
